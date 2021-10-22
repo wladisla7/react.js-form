@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css"
-// import SignInPage from "./pages/SignIn";
-// import SignUpPage from "./pages/SignUp";
+import SignInPage from "./pages/SignInPage"
+import SignUpPage from "./pages/SignUpPage"
 
 
 
@@ -10,7 +10,7 @@ function App() {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/">
-                    <SingInPage />
+                    <SignInPage />
                 </Route>
                 <Route exact path="/signup">
                     <SignUpPage />
