@@ -1,0 +1,68 @@
+.form {
+    width: 100%;
+    font-family:Gotham SSm A, Gotham SSm B, Halvetica, sans-serif;
+    max-width: 700px;
+    margin: auto;
+}
+
+.legendBtn, .legendInput  {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+ 
+.inputStyle {
+    margin-top: 15px;
+    min-width: 670px;
+    height:60px;   
+    padding-left: 25px;
+    z-index: 0;
+    font-size: 16px;
+}
+
+ 
+
+.inputRelative{
+    position: relative;
+}
+
+.labelName {
+    position: absolute;
+    left:1.5%;
+    bottom:55%;
+    z-index: 1;
+    font-size: 13px;
+}
+
+.btnStyle { 
+    margin-top: 15px;
+    min-width: 700px;
+    height:60px; 
+    font-size: 16px;
+    color:white;
+}
+
+.btnLogin {
+    background-color:rgb(40,210,208);
+    
+}
+
+.btngoogle {
+    background-color:rgb(221,75,57);
+    height:50px;
+}
+
+.remeberMe, .frgtpassword {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: white;
+}
+
+.remberMEpar {
+    cursor: pointer;
+}
+
+
+
+ 
