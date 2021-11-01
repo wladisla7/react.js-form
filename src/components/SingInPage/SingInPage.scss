@@ -3,6 +3,8 @@
     font-family:Gotham SSm A, Gotham SSm B, Halvetica, sans-serif;
     max-width: 700px;
     margin: auto;
+    z-index: 0;
+    color:white;
 }
 
 .legendBtn, .legendInput  {
@@ -10,27 +12,20 @@
     flex-direction: column;
     align-items:center;
 }
- 
-.inputStyle {
-    margin-top: 15px;
+
+
+.inputLogin {
+    margin: 15px 19px;
     min-width: 670px;
     height:60px;   
     padding-left: 25px;
-    z-index: 0;
     font-size: 16px;
-}
-
  
-
-.inputRelative{
-    position: relative;
+    
 }
+
 
 .labelName {
-    position: absolute;
-    left:1.5%;
-    bottom:55%;
-    z-index: 1;
     font-size: 13px;
 }
 
@@ -39,6 +34,7 @@
     min-width: 700px;
     height:60px; 
     font-size: 16px;
+    cursor: pointer;
     color:white;
 }
 
@@ -50,19 +46,15 @@
 .btngoogle {
     background-color:rgb(221,75,57);
     height:50px;
+  
 }
 
 .remeberMe, .frgtpassword {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    color: white;
-}
-
-.remberMEpar {
     cursor: pointer;
+    margin:8px 0;
 }
-
-
-
+ 
  
