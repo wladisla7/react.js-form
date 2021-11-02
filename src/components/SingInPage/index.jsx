@@ -3,7 +3,7 @@ import { Form, Formik, Field } from "formik";
 import Input from "../Input";
 import { SIGNIN_SCHEME } from "../../validation/validationShemesIn.js"
 import "./SingInPage.scss";
-import "../../common/main.scss"
+import "../../common/mainForComponents.scss"
 import wasted from "../../assets/image/wasted.png"
 
 import googlelogo from "../../assets/image/google.png"

@@ -3,7 +3,7 @@ import { Form, Formik, Field } from "formik";
 import Input from "../Input";
 import { SIGNUP_SCHEME } from "../../validation/validationShemesUp.js"
 import "./SingUpPage.scss"
-import "../../common/main.scss"
+import "../../common/mainForComponents.scss"
 
 
 
