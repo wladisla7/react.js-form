@@ -3,10 +3,11 @@ import { Form, Formik, Field } from "formik";
 import Input from "../Input";
 import { SIGNUP_SCHEME } from "../../validation/validationShemesUp.js"
 import "./SingUpPage.scss"
+import "../../common/main.scss"
 
 
 
-// import googlelogo from "../../assets/image/google.png"
+import googlelogo from "../../assets/image/google.png"
 
 const initialValues = {
     firstname: "",
@@ -73,8 +74,8 @@ export default function RegisrationForm(props) {
                         </legend>
                         <legend className="legendBtn">
                             <button type="submit" className="btnStyle  btnLogin">Create Account</button>
-                            <p className="Service">By clicking this button, you agree to our <u>Terms of Service</u>. </p>
-                            <button type="button" href="google.com/intl/ru/gmail/about" className="btnStyle btngoogle">Sing in with Google</button>
+                            <span className="Service">By clicking this button, you agree to our <u>Terms of Service</u>. </span>
+                            <button type="button" href="google.com/intl/ru/gmail/about" className="btnStyle btngoogle"> <img src={googlelogo} alt={"logo-google"}/> Sing in with Google</button>
                         </legend>
                     </Form>
                 );
