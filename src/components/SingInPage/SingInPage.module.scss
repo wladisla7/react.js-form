@@ -1,0 +1,17 @@
+.inputLogin {
+    margin: 15px 19px;
+    min-width: 670px;
+    height:60px;   
+    padding-left: 25px;
+    font-size: 16px;   
+}
+ 
+.remeberMe, .frgtpassword {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    cursor: pointer;
+    margin:8px 0;
+}
+ 
+ 
