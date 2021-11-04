@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LoginForm from "../../components/SingInPage"
 import logo from "../../assets/image/logo.png";
-import "../../common/mainForPages.scss"
+import "../../common/mainStylesForPages.scss"
 
 export default function SignInPage() {
 
