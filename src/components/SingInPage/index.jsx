@@ -2,8 +2,8 @@ import React from "react";
 import { Form, Formik, Field } from "formik";
 import Input from "../Input";
 import { SIGNIN_SCHEME } from "../../validation/validationShemesIn.js"
-import "./SingInPage.scss";
-import "../../common/mainForComponents.scss"
+import styles from "./SingInPage.module.scss";
+import "../../common/mainStylesForComponents.scss"
 import wasted from "../../assets/image/wasted.png"
 
 import googlelogo from "../../assets/image/google.png"
@@ -31,14 +31,14 @@ export default function LoginForm(props) {
                     <Form className="form">
                         <legend className="legendInput">
 
-                            <Input type="text" name="email" className="inputLogin" placeholder="Email adress"{...formikProps} />
+                            <Input type="text" name="email" className={styles.inputLogin} placeholder="Email adress"{...formikProps} />
 
-                            <Input type="text" name="password" className="inputLogin" placeholder="Password"{...formikProps} />
+                            <Input type="text" name="password" className={styles.inputLogin} placeholder="Password"{...formikProps} />
 
                         </legend>
                         <legend>
-                            <div className="frgtpassword">
-                                <label className="remeberMe">
+                            <div className={styles.frgtpassword}>
+                                <label className={styles.remeberMe}>
                                     <Field type="checkbox" name="remeberMe" />
                                     Remeber Me
                                 </label>
