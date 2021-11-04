@@ -2,12 +2,11 @@ import React from "react";
 import { Form, Formik, Field } from "formik";
 import Input from "../Input";
 import { SIGNUP_SCHEME } from "../../validation/validationShemesUp.js"
+import mainstyles from "../../common/mainStylesForComponents.module.scss"
 import styles from "./SingUpPage.module.scss"
-import "../../common/mainStylesForComponents.scss"
-
-
-
 import googlelogo from "../../assets/image/google.png"
+
+
 
 const initialValues = {
     firstname: "",
@@ -32,8 +31,8 @@ export default function RegisrationForm(props) {
         >
             {(formikProps) => {
                 return (
-                    <Form className="form">
-                        <legend className="legendInput">
+                    <Form className={mainstyles.form}>
+                        <legend className={mainstyles.legendInput}>
                             <label className={styles.regform}>
                                 <Input type="text" name="firstname" className={styles.inputStyleUp} placeholder="First Name" {...formikProps} />
 
@@ -72,10 +71,10 @@ export default function RegisrationForm(props) {
                             <Field type="checkbox" name="allow" required />
                             <span className={styles.AllowSpan}> Allow Squadhelp to send marketing/promotional offers from time to time </span>
                         </legend>
-                        <legend className="legendBtn">
-                            <button type="submit" className="btnStyle  btnLogin">Create Account</button>
+                        <legend className={mainstyles.legendBtn}>
+                            <button type="submit" className={mainstyles.btnforlogin}>Create Account</button>
                             <span className={styles.Service}>By clicking this button, you agree to our <u>Terms of Service</u>. </span>
-                            <button type="button" href="google.com/intl/ru/gmail/about" className="btnStyle btngoogle"> <img src={googlelogo} alt={"logo-google"} /> Sing in with Google</button>
+                            <button type="button" href="google.com/intl/ru/gmail/about" className={mainstyles.btnforgoggle}> <img src={googlelogo} alt={"logo-google"} /> Sing in with Google</button>
                         </legend>
                     </Form>
                 );
