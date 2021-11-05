@@ -36,13 +36,9 @@ export const SIGNUP_SCHEME = yup
             .matches(passwordRegex, "Invalid Passoword, please try again")
             .required("Password is required"),
 
-        confPassword: yup
+        confPassword:yup
             .string()
-            .matches(passwordRegex, "Invalid Passoword, please try again")
-            .required("Confirm is required"),
-
-        
-
+            .oneOf([yup.ref('password'), null], 'Passwords must match')
     });
 
-
+ 
